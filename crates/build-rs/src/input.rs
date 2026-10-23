@@ -183,7 +183,7 @@ mod cfg {
         ENV.is_present("CARGO_CFG_DOC")
     }
 
-    #[cfg(false)]
+    /// If the crate is being compiled for [Docs.rs](https://docs.rs/about).
     #[track_caller]
     pub fn cargo_cfg_docsrs() -> bool {
         ENV.is_present("CARGO_CFG_DOCSRS")
